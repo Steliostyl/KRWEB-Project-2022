@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Voltage_Control_Sources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Record_-_Playback_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drums_Struck_Directly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Modules_Communicating_Between_Devices_-_Signal_Convertors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid_Analogue_-_Digital_Configurations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composite_Chordophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electromechanical_Sound_Processing_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hand_Friction_Drums"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rattle_Drums"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blown_Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Sticks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spike_Harps_With_Tall_Stringholders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edge_Instruments_-_Flutes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Played_By_Friction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Struck_Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Directly_Struck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Free_Aerophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shaken_And_Indirectly_Struck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Labrosones_-_Lip-Reed_Instruments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#In_The_Form_Of_A_Frame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electro-Acoustic_Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wind_Instruments_Proper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Drums_With_Cord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photoelectric_Electromechanical_Instruments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Control_Sources_And_Interfaces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electro-Acoustic_Membranophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idiophones_Struck_Directly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Variable_Tension_Chordophones_-_Plucked_Drums"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Synthesizers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Digital_Modules,_Components_Or_Configurations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frame_Zithers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Record_-_Playback_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interruptive_Free_Aerophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blown_Sticks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chordophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Drums_With_Stick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flexed_Diaphragms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With_Loose_String_Attached_To_Drum-Head"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Vessels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blown_Plaques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raft_Zithers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transducers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Signal_Mixing_Modifying_Reproducing_And_Processing_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#In_Board_or_Comb_-_Form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trough_Zithers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Displacement_Free_Aerophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edge-Tone_Instruments_That_Are_Not_Flutes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Digital_Samplers_And_Sampling_Synthesizers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Struck_Drums"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musical_Instruments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Free_Kazoos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lutes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indirectly_Struck_Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With_String_Attached_To_The_End_Of_A_Neck_And_To_The_Drum-Head"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Board_Zithers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tube_Zithers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aerophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Drums"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plosive_Aerophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tube_-_Vessel_Kazoos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tone_Wheel_Instruments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electro-Acoustic_Chordophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electromechanical_Samplers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamellaphones_-_Plucked_Idiophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal_Sheets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Played_By_Shaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analogue_Electronic_Instruments_Modules_And_Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_Analogue_Modules_Or_Configurations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Singing_Membranes_-_Kazoos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electro-Acoustic_Aerophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Plaques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analogue_synthesizers_and_other_electronic_instruments_with__thermionic_valve_(vacuum-tube)_or_solid_state_circuitry_(transistor_and/or__analogue_integrated_circuitry)_generating_and/or_processing_electric__sound_signals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Membranophones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Friction_Sheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Membranopipes"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aerophones"/>
+        <Class IRI="#Musical_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analogue_Electronic_Instruments_Modules_And_Components"/>
+        <Class IRI="#Electrophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blown_Idiophones"/>
+        <Class IRI="#Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blown_Plaques"/>
+        <Class IRI="#Blown_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blown_Sticks"/>
+        <Class IRI="#Blown_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Board_Zithers"/>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chordophones"/>
+        <Class IRI="#Musical_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composite_Chordophones"/>
+        <Class IRI="#Chordophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Control_Sources_And_Interfaces"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+        <Class IRI="#Electrophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Modules_Communicating_Between_Devices_-_Signal_Convertors"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Record_-_Playback_Devices"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Samplers_And_Sampling_Synthesizers"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Signal_Mixing_Modifying_Reproducing_And_Processing_Devices"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Digital_Synthesizers"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Directly_Struck"/>
+        <Class IRI="#Metal_Sheets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Displacement_Free_Aerophones"/>
+        <Class IRI="#Free_Aerophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drums_Struck_Directly"/>
+        <Class IRI="#Struck_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge-Tone_Instruments_That_Are_Not_Flutes"/>
+        <Class IRI="#Wind_Instruments_Proper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edge_Instruments_-_Flutes"/>
+        <Class IRI="#Wind_Instruments_Proper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electro-Acoustic_Aerophones"/>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electro-Acoustic_Chordophones"/>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electro-Acoustic_Idiophones"/>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+        <Class IRI="#Electrophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electro-Acoustic_Membranophones"/>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+        <Class IRI="#Electrophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electromechanical_Samplers"/>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electromechanical_Sound_Processing_Devices"/>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrophones"/>
+        <Class IRI="#Musical_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flexed_Diaphragms"/>
+        <Class IRI="#Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frame_Zithers"/>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Free_Aerophones"/>
+        <Class IRI="#Aerophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Free_Kazoos"/>
+        <Class IRI="#Singing_Membranes_-_Kazoos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Drums"/>
+        <Class IRI="#Membranophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Drums_With_Cord"/>
+        <Class IRI="#Friction_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Drums_With_Stick"/>
+        <Class IRI="#Friction_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Idiophones"/>
+        <Class IRI="#Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Plaques"/>
+        <Class IRI="#Friction_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Sheet"/>
+        <Class IRI="#Friction_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Sticks"/>
+        <Class IRI="#Friction_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Friction_Vessels"/>
+        <Class IRI="#Friction_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hand_Friction_Drums"/>
+        <Class IRI="#Friction_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harps"/>
+        <Class IRI="#Composite_Chordophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid_Analogue_-_Digital_Configurations"/>
+        <Class IRI="#Electrophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idiophones"/>
+        <Class IRI="#Musical_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idiophones_Struck_Directly"/>
+        <Class IRI="#Struck_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#In_Board_or_Comb_-_Form"/>
+        <Class IRI="#Lamellaphones_-_Plucked_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#In_The_Form_Of_A_Frame"/>
+        <Class IRI="#Lamellaphones_-_Plucked_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indirectly_Struck_Idiophones"/>
+        <Class IRI="#Struck_Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interruptive_Free_Aerophones"/>
+        <Class IRI="#Free_Aerophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Labrosones_-_Lip-Reed_Instruments"/>
+        <Class IRI="#Wind_Instruments_Proper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lamellaphones_-_Plucked_Idiophones"/>
+        <Class IRI="#Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lutes"/>
+        <Class IRI="#Composite_Chordophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Membranophones"/>
+        <Class IRI="#Musical_Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Membranopipes"/>
+        <Class IRI="#Wind_Instruments_Proper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal_Sheets"/>
+        <Class IRI="#Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_Analogue_Modules_Or_Configurations"/>
+        <Class IRI="#Analogue_Electronic_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photoelectric_Electromechanical_Instruments"/>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Played_By_Friction"/>
+        <Class IRI="#Metal_Sheets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Played_By_Shaking"/>
+        <Class IRI="#Metal_Sheets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plosive_Aerophones"/>
+        <Class IRI="#Free_Aerophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raft_Zithers"/>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rattle_Drums"/>
+        <Class IRI="#Struck_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Record_-_Playback_Devices"/>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shaken_And_Indirectly_Struck"/>
+        <Class IRI="#Metal_Sheets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+        <Class IRI="#Chordophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Singing_Membranes_-_Kazoos"/>
+        <Class IRI="#Membranophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Electrophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spike_Harps_With_Tall_Stringholders"/>
+        <Class IRI="#Composite_Chordophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Struck_Drums"/>
+        <Class IRI="#Membranophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Struck_Idiophones"/>
+        <Class IRI="#Idiophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tone_Wheel_Instruments"/>
+        <Class IRI="#Electromechanical_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transducers"/>
+        <Class IRI="#Electro-Acoustic_Instruments_And_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trough_Zithers"/>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tube_-_Vessel_Kazoos"/>
+        <Class IRI="#Singing_Membranes_-_Kazoos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tube_Zithers"/>
+        <Class IRI="#Simple_Chordophones_-_Zithers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Variable_Tension_Chordophones_-_Plucked_Drums"/>
+        <Class IRI="#Chordophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voltage_Control_Sources"/>
+        <Class IRI="#Analogue_Electronic_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wind_Instruments_Proper"/>
+        <Class IRI="#Aerophones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With_Loose_String_Attached_To_Drum-Head"/>
+        <Class IRI="#Variable_Tension_Chordophones_-_Plucked_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With_String_Attached_To_The_End_Of_A_Neck_And_To_The_Drum-Head"/>
+        <Class IRI="#Variable_Tension_Chordophones_-_Plucked_Drums"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analogue_synthesizers_and_other_electronic_instruments_with__thermionic_valve_(vacuum-tube)_or_solid_state_circuitry_(transistor_and/or__analogue_integrated_circuitry)_generating_and/or_processing_electric__sound_signals"/>
+        <Class IRI="#Analogue_Electronic_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other_Digital_Modules,_Components_Or_Configurations"/>
+        <Class IRI="#Digital_Instruments_Modules_And_Components"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
