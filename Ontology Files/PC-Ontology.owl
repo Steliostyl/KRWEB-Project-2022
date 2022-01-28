@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/steli/ontologies/2022/0/pc-build-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/steli/ontologies/2022/0/pc-build-ontology">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalPSU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirCooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#M2SSD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPSU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesktopCPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GamingComputer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllInOne"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SSD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dGPU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPUCooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desktop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPUCooler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBattery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaptopRAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaptopCPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PSU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalPSU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMotherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NvmeSSD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mini-PC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2p5InchSSD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesktopRAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidCooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HDD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#M2SataSSD"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#GamingComputer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Computer"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasGPU"/>
+                <Class IRI="#dGPU"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Computer"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBattery"/>
+                <Class IRI="#Battery"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCPU"/>
+                <Class IRI="#LaptopCPU"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasScreen"/>
+                <Class IRI="#Screen"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#APU"/>
+        <Class IRI="#DesktopCPU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirCooler"/>
+        <Class IRI="#CPUCooler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllInOne"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllInOne"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasScreen"/>
+            <Class IRI="#Screen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCPU"/>
+            <Class IRI="#CPU"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPSU"/>
+            <Class IRI="#PSU"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRAM"/>
+            <Class IRI="#RAM"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStorage"/>
+            <Class IRI="#Storage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desktop"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesktopCPU"/>
+        <Class IRI="#CPU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesktopRAM"/>
+        <Class IRI="#RAM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalPSU"/>
+        <Class IRI="#PSU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HDD"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalPSU"/>
+        <Class IRI="#PSU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaptopCPU"/>
+        <Class IRI="#CPU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaptopRAM"/>
+        <Class IRI="#RAM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidCooler"/>
+        <Class IRI="#CPUCooler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#M2SSD"/>
+        <Class IRI="#SSD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#M2SataSSD"/>
+        <Class IRI="#M2SSD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mini-PC"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NvmeSSD"/>
+        <Class IRI="#M2SSD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SSD"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2p5InchSSD"/>
+        <Class IRI="#SSD"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AirCooler"/>
+        <Class IRI="#LiquidCooler"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AllInOne"/>
+        <Class IRI="#Desktop"/>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#Mini-PC"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Battery"/>
+        <Class IRI="#CPU"/>
+        <Class IRI="#CPUCooler"/>
+        <Class IRI="#Case"/>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Motherboard"/>
+        <Class IRI="#PSU"/>
+        <Class IRI="#RAM"/>
+        <Class IRI="#Screen"/>
+        <Class IRI="#Storage"/>
+        <Class IRI="#dGPU"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HDD"/>
+        <Class IRI="#SSD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#M2SSD"/>
+        <Class IRI="#2p5InchSSD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#M2SataSSD"/>
+        <Class IRI="#NvmeSSD"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBattery"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCPU"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCPUCooler"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGPU"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPSU"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRAM"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasScreen"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStorage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBattery"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPU"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCPUCooler"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCase"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGPU"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPSU"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRAM"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScreen"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStorage"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBattery"/>
+        <Class IRI="#Battery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPU"/>
+        <Class IRI="#CPU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCPUCooler"/>
+        <Class IRI="#CPUCooler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCase"/>
+        <Class IRI="#Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGPU"/>
+        <Class IRI="#dGPU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <Class IRI="#Motherboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPSU"/>
+        <Class IRI="#PSU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRAM"/>
+        <Class IRI="#RAM"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScreen"/>
+        <Class IRI="#Screen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStorage"/>
+        <Class IRI="#Storage"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

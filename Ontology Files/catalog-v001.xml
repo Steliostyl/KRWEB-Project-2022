@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1642649173856" name="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2" uri="musical-instruments-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1643409012622" name="http://www.pizzaw.com/ontologies/pizza.owl" uri="pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1643409012622" name="http://www.semanticweb.org/steli/ontologies/2022/0/library.owl" uri="library.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1643409012622" name="duplicate:http://www.semanticweb.org/steli/ontologies/2022/0/pc-build-ontology" uri="Electronics%20Store.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1643409012622" name="duplicate:http://www.semanticweb.org/steli/ontologies/2022/0/pc-build-ontology" uri="PC-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1643409012622" name="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2" uri="musical-instruments-ontology.owl"/>
     </group>
 </catalog>
