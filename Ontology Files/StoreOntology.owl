@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CPU"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryProperties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelProperties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressStreetName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicsStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shirt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LargeClothes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerPeripherals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPhone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPanelOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MegaStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TVStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoldBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressStreetNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pants"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryVoltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dGPU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBattery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clothes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallClothes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalesPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GamingComputer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInComputer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPesonnel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClothesStore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HDD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPUCooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desktop"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressZipCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerStore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumClothes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSurname"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerComponents"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryTechnology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SSD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sells"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PSU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPanel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficeComputer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManager"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasClothesSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ClothesStore"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Clothes"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ComputerStore"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Computer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#ComputerComponents"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#ComputerPeripherals"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ElectronicsStore"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectUnionOf>
+                <Class IRI="#ComputerStore"/>
+                <Class IRI="#TVStore"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GamingComputer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Computer"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#dGPU"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LargeClothes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Clothes"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasClothesSize"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Large</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Manager"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isManager"/>
+                <Class IRI="#Store"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MediumClothes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Clothes"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasClothesSize"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MegaStore"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#ClothesStore"/>
+                <Class IRI="#ComputerStore"/>
+                <Class IRI="#TVStore"/>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OfficeComputer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Computer"/>
+            <ObjectComplementOf>
+                <Class IRI="#GamingComputer"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SmallClothes"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Clothes"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasClothesSize"/>
+                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Small</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TVStore"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#TV"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Battery"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasBatteryCapacity"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasBatteryTechnology"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasBatteryVoltage"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPU"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPUCooler"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Case"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clothes"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coat"/>
+        <Class IRI="#Clothes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#CPU"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#RAM"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Storage"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerComponents"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerPeripherals"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desktop"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desktop"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#CPUCooler"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Case"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Motherboard"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#PSU"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HDD"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keyboard"/>
+        <Class IRI="#ComputerPeripherals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPanel"/>
+            <Class IRI="#Panel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#ComputerPeripherals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motherboard"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <Class IRI="#ComputerPeripherals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PSU"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panel"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPanelRefreshRate"/>
+            <Datatype abbreviatedIRI="xsd:short"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panel"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPanelResolution"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panel"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPanelSize"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panel"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPanelTechnology"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Panel"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pants"/>
+        <Class IRI="#Clothes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressCity"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressCountry"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressStreetName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressStreetNumber"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressZipCode"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAge"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasEmail"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPhone"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasSurname"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPrice"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasTitle"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RAM"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SSD"/>
+        <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalesPerson"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shirt"/>
+        <Class IRI="#Clothes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressCity"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressCountry"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressStreetName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressStreetNumber"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasAddressZipCode"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dGPU"/>
+        <Class IRI="#ComputerComponents"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CPU"/>
+        <Class IRI="#CPUCooler"/>
+        <Class IRI="#Case"/>
+        <Class IRI="#Motherboard"/>
+        <Class IRI="#PSU"/>
+        <Class IRI="#RAM"/>
+        <Class IRI="#Storage"/>
+        <Class IRI="#dGPU"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Clothes"/>
+        <Class IRI="#Computer"/>
+        <Class IRI="#ComputerComponents"/>
+        <Class IRI="#ComputerPeripherals"/>
+        <Class IRI="#TV"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coat"/>
+        <Class IRI="#Pants"/>
+        <Class IRI="#Shirt"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Staff"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Desktop"/>
+        <Class IRI="#Laptop"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HDD"/>
+        <Class IRI="#SSD"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Keyboard"/>
+        <Class IRI="#Monitor"/>
+        <Class IRI="#Mouse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LargeClothes"/>
+        <Class IRI="#MediumClothes"/>
+        <Class IRI="#SmallClothes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Manager"/>
+        <Class IRI="#SalesPerson"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBattery"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPanel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasValue"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInComputer"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isManager"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPanelOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSoldBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sells"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#isInComputer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasManager"/>
+        <ObjectProperty IRI="#hasManager"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPanel"/>
+        <ObjectProperty IRI="#isPanelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBattery"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasManager"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPanel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasValue"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isManager"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isPanelOf"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#worksWith"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSupervisor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBattery"/>
+        <Class IRI="#Laptop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManager"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBattery"/>
+        <Class IRI="#Battery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#ComputerComponents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManager"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddress"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddressCity"/>
+        <DataProperty IRI="#hasAddress"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <DataProperty IRI="#hasAddress"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddressStreetName"/>
+        <DataProperty IRI="#hasAddress"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddressStreetNumber"/>
+        <DataProperty IRI="#hasAddress"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAddressZipCode"/>
+        <DataProperty IRI="#hasAddress"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBatteryCapacity"/>
+        <DataProperty IRI="#hasBatteryProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBatteryProperties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBatteryTechnology"/>
+        <DataProperty IRI="#hasBatteryProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBatteryVoltage"/>
+        <DataProperty IRI="#hasBatteryProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasClothesSize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEmail"/>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPanelProperties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+        <DataProperty IRI="#hasPanelProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPanelResolution"/>
+        <DataProperty IRI="#hasPanelProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPanelSize"/>
+        <DataProperty IRI="#hasPanelProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPanelTechnology"/>
+        <DataProperty IRI="#hasPanelProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPersonalInformation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPhone"/>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSurname"/>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAddress"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasClothesSize"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPrice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTitle"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAddress"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAddress"/>
+        <Class IRI="#Store"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBatteryProperties"/>
+        <Class IRI="#Battery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasClothesSize"/>
+        <Class IRI="#Clothes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPanelProperties"/>
+        <Class IRI="#Panel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonalInformation"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Battery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Panel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTitle"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasClothesSize"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Products that are sold by Stores</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
