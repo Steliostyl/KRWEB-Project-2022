@@ -49,16 +49,19 @@
         <Class IRI="#ComputerPeripherals"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="#hasPhone"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasPhone"/>
+        <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPanelOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MegaStore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Case-01"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Battery"/>
@@ -74,6 +77,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isSoldBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HDD-01"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAddress"/>
@@ -94,10 +100,10 @@
         <Class IRI="#Motherboard"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#worksWith"/>
+        <DataProperty IRI="#hasAddressStreetNumber"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAddressStreetNumber"/>
+        <ObjectProperty IRI="#worksWith"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasPanelTechnology"/>
@@ -109,10 +115,22 @@
         <Class IRI="#Pants"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SSD-01"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasBatteryVoltage"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Store-01"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#dGPU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CPUCooler-01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RAM-01"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBattery"/>
@@ -121,10 +139,16 @@
         <Class IRI="#Clothes"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CPU-01"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PSU-01"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SmallClothes"/>
@@ -139,10 +163,10 @@
         <Class IRI="#RAM"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SalesPerson"/>
+        <Class IRI="#GamingComputer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GamingComputer"/>
+        <Class IRI="#SalesPerson"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isSupervisorOf"/>
@@ -166,7 +190,13 @@
         <Class IRI="#ClothesStore"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Manager-02"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isWorkingAtStore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SalesPerson-01"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HDD"/>
@@ -208,7 +238,13 @@
         <Class IRI="#ComputerComponents"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#dGPU-01"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasBatteryTechnology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Motherboard-01"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasValue"/>
@@ -223,13 +259,16 @@
         <DataProperty IRI="#hasAddressCountry"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Manager-01"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#sells"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#PSU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PSU"/>
+        <ObjectProperty IRI="#hasManager"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPanel"/>
@@ -666,6 +705,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Store"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasManager"/>
+            <Class IRI="#Manager"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
         <DataAllValuesFrom>
             <DataProperty IRI="#hasAddressCity"/>
             <Datatype abbreviatedIRI="xsd:string"/>
@@ -755,12 +801,188 @@
         <Class IRI="#Manager"/>
         <Class IRI="#SalesPerson"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#CPU"/>
+        <NamedIndividual IRI="#CPU-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPUCooler"/>
+        <NamedIndividual IRI="#CPUCooler-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Case"/>
+        <NamedIndividual IRI="#Case-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HDD"/>
+        <NamedIndividual IRI="#HDD-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#Manager-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Manager-02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#Motherboard-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PSU"/>
+        <NamedIndividual IRI="#PSU-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAM"/>
+        <NamedIndividual IRI="#RAM-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SSD"/>
+        <NamedIndividual IRI="#SSD-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SalesPerson"/>
+        <NamedIndividual IRI="#SalesPerson-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dGPU"/>
+        <NamedIndividual IRI="#dGPU-01"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <NamedIndividual IRI="#SalesPerson-01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManager"/>
+        <NamedIndividual IRI="#Manager-02"/>
+        <NamedIndividual IRI="#Store-01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#Store-01"/>
+        <NamedIndividual IRI="#Manager-01"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#CPU-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">289.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#CPU-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ryzen 5 5600X</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#CPUCooler-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">59.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#CPUCooler-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Scythe Fuma 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Case-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">79.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTitle"/>
+        <NamedIndividual IRI="#Case-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CoolerMaster NR200P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chania</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetName"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Efedron Polemiston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetNumber"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">41A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressZipCode"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">73135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">steliostylian@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stylianos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6985850265</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSurname"/>
+        <NamedIndividual IRI="#Manager-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stylianakis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Store-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chania</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Store-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetName"/>
+        <NamedIndividual IRI="#Store-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Efedron Polemiston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetNumber"/>
+        <NamedIndividual IRI="#Store-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressZipCode"/>
+        <NamedIndividual IRI="#Store-01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">73135</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBattery"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasManager"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -821,7 +1043,7 @@
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasManager"/>
-        <ObjectProperty IRI="#hasManager"/>
+        <ObjectProperty IRI="#isManager"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPanel"/>
@@ -877,10 +1099,6 @@
         <Class IRI="#Computer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasManager"/>
-        <Class IRI="#Store"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPesonnel"/>
         <Class IRI="#Store"/>
     </ObjectPropertyDomain>
@@ -899,10 +1117,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#ComputerComponents"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasManager"/>
-        <Class IRI="#Manager"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1013,16 +1227,40 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
-        <DataProperty IRI="#hasAddress"/>
+        <DataProperty IRI="#hasAddressCity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAddressCountry"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAddressStreetName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAddressStreetNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAddressZipCode"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAge"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasClothesSize"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#hasPersonalInformation"/>
+        <DataProperty IRI="#hasEmail"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPhone"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasPrice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSurname"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasTitle"/>
