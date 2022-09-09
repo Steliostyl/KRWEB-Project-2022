@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1662744061625" name="http://www.pizzaw.com/ontologies/pizza.owl" uri="pizza.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1662744061625" name="http://www.semanticweb.org/steli/ontologies/2022/0/library.owl" uri="library.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1662744061625" name="http://www.semanticweb.org/steli/ontologies/2022/0/pc-build-ontology" uri="PC-Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1662744061625" name="duplicate:http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology" uri="Stores.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1662744061625" name="duplicate:http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology" uri="StoreOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1662744061625" name="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2" uri="musical-instruments-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1662754943568" name="http://www.pizzaw.com/ontologies/pizza.owl" uri="pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1662754943568" name="http://www.semanticweb.org/steli/ontologies/2022/0/library.owl" uri="library.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1662754943568" name="http://www.semanticweb.org/steli/ontologies/2022/0/pc-build-ontology" uri="PC-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1662754943568" name="duplicate:http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology" uri="Stores.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1662754943568" name="duplicate:http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology" uri="StoreOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1662754943568" name="http://www.semanticweb.org/steli/ontologies/2022/0/untitled-ontology-2" uri="musical-instruments-ontology.owl"/>
     </group>
 </catalog>

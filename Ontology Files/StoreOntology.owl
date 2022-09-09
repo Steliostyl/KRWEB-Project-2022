@@ -58,6 +58,9 @@
         <Class IRI="#GamingMonitor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WiredMouse"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#worksWith"/>
     </Declaration>
     <Declaration>
@@ -110,6 +113,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WirelessMouse"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasdGPU"/>
@@ -226,6 +232,9 @@
         <ObjectProperty IRI="#hasCPUCooler"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#dGPU"/>
     </Declaration>
     <Declaration>
@@ -260,6 +269,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMonitor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isWireless"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Shoes"/>
@@ -495,6 +507,26 @@
             <Class IRI="#TV"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WiredMouse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Mouse"/>
+            <DataHasValue>
+                <DataProperty IRI="#isWireless"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WirelessMouse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Mouse"/>
+            <DataHasValue>
+                <DataProperty IRI="#isWireless"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Battery"/>
         <Class IRI="#ComputerComponent"/>
@@ -502,22 +534,22 @@
     <SubClassOf>
         <Class IRI="#Battery"/>
         <ObjectIntersectionOf>
-            <DataAllValuesFrom>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasBatteryCapacity"/>
                 <Datatype abbreviatedIRI="xsd:integer"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasBatteryTechnology"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasBatteryVoltage"/>
                 <Datatype abbreviatedIRI="xsd:float"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasTitle"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
+            </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -832,6 +864,14 @@
         <Class IRI="#ElectronicsStore"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#WiredMouse"/>
+        <Class IRI="#Mouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WirelessMouse"/>
+        <Class IRI="#Mouse"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#dGPU"/>
         <Class IRI="#ComputerComponent"/>
     </SubClassOf>
@@ -935,16 +975,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isManager"/>
         <NamedIndividual IRI="#Manager-01"/>
-        <NamedIndividual IRI="#Store-01"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSupervisorOf"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <NamedIndividual IRI="#SalesPerson-01"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isManager"/>
-        <NamedIndividual IRI="#Manager-02"/>
         <NamedIndividual IRI="#Store-01"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -1123,6 +1153,10 @@
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+        <ObjectProperty IRI="#isInComputer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isCompatibleWith"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1154,6 +1188,10 @@
         <ObjectProperty IRI="#worksWith"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCase"/>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty IRI="#isInComputer"/>
@@ -1183,9 +1221,9 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasMotherboard"/>
     </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isWorkingAtStore"/>
-    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+    </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#isManager"/>
     </InverseFunctionalObjectProperty>
@@ -1197,6 +1235,9 @@
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#hasSupervisor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCompatibleWith"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#isSupervisorOf"/>
@@ -1218,7 +1259,23 @@
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <Class IRI="#ComputerComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInComputer"/>
+        <Class IRI="#ComputerComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isManager"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSoldBy"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSupervisorOf"/>
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1282,8 +1339,24 @@
         <Class IRI="#dGPU"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <Class IRI="#ComputerComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInComputer"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isManager"/>
         <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSoldBy"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#Staff"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#sells"/>
@@ -1393,6 +1466,10 @@
         <DataProperty IRI="#hasTitle"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isWireless"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasAddressCity"/>
     </FunctionalDataProperty>
@@ -1451,6 +1528,9 @@
         <DataProperty IRI="#hasPrice"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
+        <DataProperty IRI="#hasProductID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty IRI="#hasSurname"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -1491,6 +1571,10 @@
         <Class IRI="#Product"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:short"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasClothesSize"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1501,6 +1585,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasTitle"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isWireless"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
