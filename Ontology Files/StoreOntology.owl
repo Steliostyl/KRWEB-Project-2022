@@ -31,9 +31,6 @@
         <Class IRI="#ComputerPeripherals"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LargeClothes"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasPhone"/>
     </Declaration>
     <Declaration>
@@ -56,6 +53,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GamingMonitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WiredMouse"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#worksWith"/>
@@ -85,9 +88,6 @@
         <NamedIndividual IRI="#RAM-01"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasBattery"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
@@ -115,6 +115,9 @@
         <Class IRI="#Keyboard"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WirelessMouse"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasdGPU"/>
     </Declaration>
     <Declaration>
@@ -122,6 +125,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#HDD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighEndTV"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMotherboard"/>
@@ -137,6 +143,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasPanelRefreshRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelMaxBrightness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#dGPU-01"/>
@@ -175,6 +184,9 @@
         <Class IRI="#Storage"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ShoeStore"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Computer"/>
     </Declaration>
     <Declaration>
@@ -182,9 +194,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPanelOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Battery"/>
@@ -223,6 +232,9 @@
         <ObjectProperty IRI="#hasCPUCooler"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#dGPU"/>
     </Declaration>
     <Declaration>
@@ -230,9 +242,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SmallClothes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSupervisor"/>
@@ -259,6 +268,15 @@
         <NamedIndividual IRI="#SalesPerson-01"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasMonitor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isWireless"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shoes"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CPUCooler"/>
     </Declaration>
     <Declaration>
@@ -274,7 +292,7 @@
         <Class IRI="#Laptop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MediumClothes"/>
+        <Class IRI="#OfficeMonitor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSurname"/>
@@ -304,9 +322,6 @@
         <ObjectProperty IRI="#hasManager"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPanel"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasEmail"/>
     </Declaration>
     <Declaration>
@@ -319,9 +334,6 @@
         <ObjectProperty IRI="#isManager"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Panel"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasClothesSize"/>
     </Declaration>
     <Declaration>
@@ -329,18 +341,119 @@
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#ClothesStore"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Store"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#sells"/>
-                <Class IRI="#Clothes"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#sells"/>
+            <Class IRI="#Clothes"/>
+        </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ComputerStore"/>
         <ObjectIntersectionOf>
-            <Class IRI="#ElectronicsStore"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#sells"/>
+                    <Class IRI="#Clothes"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#sells"/>
+                    <Class IRI="#TV"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Computer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#ComputerComponent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ElectronicsStore"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#sells"/>
+                    <Class IRI="#Computer"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#sells"/>
+                    <Class IRI="#ComputerComponent"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#sells"/>
+                    <Class IRI="#TV"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#sells"/>
+                    <Class IRI="#Clothes"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GamingComputer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Computer"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasdGPU"/>
+                <Class IRI="#dGPU"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GamingMonitor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Monitor"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPanelRefreshRate"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:short"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">120</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HighEndTV"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TV"/>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#hasPanelTechnology"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OLED</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasPanelTechnology"/>
+                    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QLED</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Manager"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Staff"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#isManager"/>
+                <Class IRI="#Store"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MegaStore"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Clothes"/>
+            </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#sells"/>
                 <Class IRI="#Computer"/>
@@ -351,67 +464,8 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#sells"/>
-                <Class IRI="#ComputerPeripherals"/>
+                <Class IRI="#TV"/>
             </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ElectronicsStore"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Store"/>
-            <ObjectUnionOf>
-                <Class IRI="#ComputerStore"/>
-                <Class IRI="#TVStore"/>
-            </ObjectUnionOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#GamingComputer"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Computer"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#dGPU"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#LargeClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Clothes"/>
-            <DataHasValue>
-                <DataProperty IRI="#hasClothesSize"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Large</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Manager"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Staff"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#isManager"/>
-                <Class IRI="#Store"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#MediumClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Clothes"/>
-            <DataHasValue>
-                <DataProperty IRI="#hasClothesSize"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#MegaStore"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#ClothesStore"/>
-            <Class IRI="#ComputerStore"/>
-            <Class IRI="#Store"/>
-            <Class IRI="#TVStore"/>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -424,23 +478,53 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#SmallClothes"/>
+        <Class IRI="#OfficeMonitor"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Clothes"/>
+            <Class IRI="#Monitor"/>
+            <ObjectComplementOf>
+                <Class IRI="#GamingMonitor"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShoeStore"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#sells"/>
+            <Class IRI="#Shoes"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Staff"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isWorkingAtStore"/>
+            <Class IRI="#Store"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TVStore"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#sells"/>
+            <Class IRI="#TV"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WiredMouse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Mouse"/>
             <DataHasValue>
-                <DataProperty IRI="#hasClothesSize"/>
-                <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Small</Literal>
+                <DataProperty IRI="#isWireless"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#TVStore"/>
+        <Class IRI="#WirelessMouse"/>
         <ObjectIntersectionOf>
-            <Class IRI="#ElectronicsStore"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#sells"/>
-                <Class IRI="#TV"/>
-            </ObjectSomeValuesFrom>
+            <Class IRI="#Mouse"/>
+            <DataHasValue>
+                <DataProperty IRI="#isWireless"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -450,22 +534,22 @@
     <SubClassOf>
         <Class IRI="#Battery"/>
         <ObjectIntersectionOf>
-            <DataAllValuesFrom>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasBatteryCapacity"/>
                 <Datatype abbreviatedIRI="xsd:integer"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasBatteryTechnology"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasBatteryVoltage"/>
                 <Datatype abbreviatedIRI="xsd:float"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasTitle"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
+            </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -485,11 +569,8 @@
         <Class IRI="#Product"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Clothes"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrice"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataAllValuesFrom>
+        <Class IRI="#ClothesStore"/>
+        <Class IRI="#Store"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Coat"/>
@@ -502,22 +583,18 @@
     <SubClassOf>
         <Class IRI="#Computer"/>
         <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCPU"/>
                 <Class IRI="#CPU"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasRAM"/>
                 <Class IRI="#RAM"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasStorage"/>
                 <Class IRI="#Storage"/>
-            </ObjectSomeValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasPrice"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
-            </DataAllValuesFrom>
+            </ObjectMinCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -527,6 +604,10 @@
     <SubClassOf>
         <Class IRI="#ComputerPeripherals"/>
         <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerStore"/>
+        <Class IRI="#ElectronicsStore"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Customer"/>
@@ -539,27 +620,39 @@
     <SubClassOf>
         <Class IRI="#Desktop"/>
         <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCPUCooler"/>
                 <Class IRI="#CPUCooler"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#Case"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#Motherboard"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasPSU"/>
                 <Class IRI="#PSU"/>
-            </ObjectSomeValuesFrom>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasCase"/>
+                <Class IRI="#Case"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasMotherboard"/>
+                <Class IRI="#Motherboard"/>
+            </ObjectExactCardinality>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectronicsStore"/>
+        <Class IRI="#Store"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GamingMonitor"/>
+        <Class IRI="#Monitor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HDD"/>
         <Class IRI="#Storage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighEndTV"/>
+        <Class IRI="#TV"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Keyboard"/>
@@ -570,15 +663,33 @@
         <Class IRI="#Computer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Laptop"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPanel"/>
-            <Class IRI="#Panel"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#MegaStore"/>
+        <Class IRI="#Store"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Monitor"/>
         <Class IRI="#ComputerPeripherals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitor"/>
+        <ObjectIntersectionOf>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPanelRefreshRate"/>
+                <Datatype abbreviatedIRI="xsd:short"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPanelResolution"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPanelSize"/>
+                <Datatype abbreviatedIRI="xsd:float"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPanelTechnology"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Motherboard"/>
@@ -589,33 +700,12 @@
         <Class IRI="#ComputerPeripherals"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PSU"/>
-        <Class IRI="#ComputerComponent"/>
+        <Class IRI="#OfficeMonitor"/>
+        <Class IRI="#Monitor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Panel"/>
-        <ObjectIntersectionOf>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasPanelRefreshRate"/>
-                <Datatype abbreviatedIRI="xsd:short"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasPanelResolution"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasPanelSize"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasPanelTechnology"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasTitle"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
+        <Class IRI="#PSU"/>
+        <Class IRI="#ComputerComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pants"/>
@@ -624,62 +714,62 @@
     <SubClassOf>
         <Class IRI="#Person"/>
         <ObjectIntersectionOf>
-            <DataAllValuesFrom>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressCity"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressCountry"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressStreetName"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressStreetNumber"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressZipCode"/>
                 <Datatype abbreviatedIRI="xsd:integer"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAge"/>
                 <Datatype abbreviatedIRI="xsd:integer"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasEmail"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasName"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasPhone"/>
                 <Datatype abbreviatedIRI="xsd:long"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasSurname"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
+            </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Product"/>
         <ObjectIntersectionOf>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#hasProductID"/>
-                <Datatype abbreviatedIRI="xsd:long"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasTitle"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
+            </DataExactCardinality>
             <DataMaxCardinality cardinality="1">
                 <DataProperty IRI="#hasPrice"/>
                 <Datatype abbreviatedIRI="xsd:float"/>
+            </DataMaxCardinality>
+            <DataMaxCardinality cardinality="1">
+                <DataProperty IRI="#hasProductID"/>
+                <Datatype abbreviatedIRI="xsd:long"/>
             </DataMaxCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -700,15 +790,16 @@
         <Class IRI="#Clothes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Staff"/>
-        <Class IRI="#Person"/>
+        <Class IRI="#ShoeStore"/>
+        <Class IRI="#ClothesStore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shoes"/>
+        <Class IRI="#Clothes"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Staff"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isWorkingAtStore"/>
-            <Class IRI="#Store"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Storage"/>
@@ -717,35 +808,68 @@
     <SubClassOf>
         <Class IRI="#Store"/>
         <ObjectIntersectionOf>
-            <ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="#hasManager"/>
                 <Class IRI="#Manager"/>
-            </ObjectAllValuesFrom>
-            <DataAllValuesFrom>
+            </ObjectExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressCity"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressCountry"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressStreetName"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressStreetNumber"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressZipCode"/>
                 <Datatype abbreviatedIRI="xsd:integer"/>
-            </DataAllValuesFrom>
+            </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TV"/>
         <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV"/>
+        <ObjectIntersectionOf>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#hasPanelRefreshRate"/>
+                <Datatype abbreviatedIRI="xsd:short"/>
+            </DataAllValuesFrom>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#hasPanelResolution"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataAllValuesFrom>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#hasPanelSize"/>
+                <Datatype abbreviatedIRI="xsd:float"/>
+            </DataAllValuesFrom>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#hasPanelTechnology"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVStore"/>
+        <Class IRI="#ElectronicsStore"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WiredMouse"/>
+        <Class IRI="#Mouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WirelessMouse"/>
+        <Class IRI="#Mouse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#dGPU"/>
@@ -774,6 +898,12 @@
         <Class IRI="#Shirt"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Coat"/>
+        <Class IRI="#Pants"/>
+        <Class IRI="#Shirt"/>
+        <Class IRI="#Shoes"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Customer"/>
         <Class IRI="#Staff"/>
     </DisjointClasses>
@@ -789,11 +919,6 @@
         <Class IRI="#Keyboard"/>
         <Class IRI="#Monitor"/>
         <Class IRI="#Mouse"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#LargeClothes"/>
-        <Class IRI="#MediumClothes"/>
-        <Class IRI="#SmallClothes"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Manager"/>
@@ -853,13 +978,8 @@
         <NamedIndividual IRI="#Store-01"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isSupervisorOf"/>
-        <NamedIndividual IRI="#Manager-01"/>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
         <NamedIndividual IRI="#SalesPerson-01"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isManager"/>
-        <NamedIndividual IRI="#Manager-02"/>
         <NamedIndividual IRI="#Store-01"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -973,14 +1093,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">73135</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasBattery"/>
-        <ObjectProperty IRI="#hasComponent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasBattery"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCPU"/>
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
@@ -1002,7 +1114,11 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasManager"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="#hasPesonnel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMonitor"/>
+        <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMotherboard"/>
@@ -1011,10 +1127,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPSU"/>
         <ObjectProperty IRI="#hasComponent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasPanel"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1041,6 +1153,10 @@
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+        <ObjectProperty IRI="#isInComputer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isCompatibleWith"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1050,11 +1166,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isManager"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isPanelOf"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isSoldBy"/>
@@ -1077,16 +1189,16 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCase"/>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty IRI="#isInComputer"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasManager"/>
         <ObjectProperty IRI="#isManager"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasPanel"/>
-        <ObjectProperty IRI="#isPanelOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1101,9 +1213,6 @@
         <ObjectProperty IRI="#sells"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasBattery"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasCase"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
@@ -1112,17 +1221,11 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasMotherboard"/>
     </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasPanel"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isWorkingAtStore"/>
-    </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#isManager"/>
+        <ObjectProperty IRI="#isCaseOfComputer"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#isPanelOf"/>
+        <ObjectProperty IRI="#isManager"/>
     </InverseFunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#isCompatibleWith"/>
@@ -1134,15 +1237,18 @@
         <ObjectProperty IRI="#hasSupervisor"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
         <ObjectProperty IRI="#isSupervisorOf"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBattery"/>
-        <Class IRI="#Laptop"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#Computer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMonitor"/>
+        <Class IRI="#Laptop"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1153,16 +1259,36 @@
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <Class IRI="#ComputerComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInComputer"/>
+        <Class IRI="#ComputerComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isManager"/>
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSoldBy"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sells"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBattery"/>
-        <Class IRI="#Battery"/>
+        <ObjectProperty IRI="#hasCPU"/>
+        <Class IRI="#CPU"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCPUCooler"/>
-        <Class IRI="#CPU"/>
+        <Class IRI="#CPUCooler"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCase"/>
@@ -1175,6 +1301,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasHDD"/>
         <Class IRI="#HDD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMonitor"/>
+        <Class IRI="#Monitor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMotherboard"/>
@@ -1209,8 +1339,28 @@
         <Class IRI="#dGPU"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <Class IRI="#ComputerComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInComputer"/>
+        <Class IRI="#Computer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isManager"/>
         <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSoldBy"/>
+        <Class IRI="#Store"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sells"/>
+        <Class IRI="#Product"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasAddress"/>
@@ -1269,6 +1419,10 @@
         <DataProperty IRI="#hasPersonalInformation"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasPanelMaxBrightness"/>
+        <DataProperty IRI="#hasPanelProperties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasPanelProperties"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1310,6 +1464,10 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasTitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isWireless"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
@@ -1349,6 +1507,9 @@
         <DataProperty IRI="#hasName"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
+        <DataProperty IRI="#hasPanelMaxBrightness"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty IRI="#hasPanelRefreshRate"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -1365,6 +1526,9 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasPrice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasProductID"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasSurname"/>
@@ -1389,7 +1553,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPanelProperties"/>
-        <Class IRI="#Panel"/>
+        <ObjectUnionOf>
+            <Class IRI="#Monitor"/>
+            <Class IRI="#TV"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPersonalInformation"/>
@@ -1403,21 +1570,25 @@
         <DataProperty IRI="#hasProductID"/>
         <Class IRI="#Product"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasTitle"/>
-        <ObjectUnionOf>
-            <Class IRI="#Battery"/>
-            <Class IRI="#Panel"/>
-            <Class IRI="#Product"/>
-        </ObjectUnionOf>
-    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:short"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasClothesSize"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasTitle"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isWireless"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
