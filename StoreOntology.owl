@@ -16,157 +16,10 @@
         <Class IRI="#CPU"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasBatteryProperties"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPanelResolution"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasPanelProperties"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Shirt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ComputerPeripherals"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPhone"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Case-01"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MegaStore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mouse"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isSoldBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Customer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HDD-01"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAddress"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GamingMonitor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WiredMouse"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#worksWith"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Coat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPanelTechnology"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasProductID"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ComputerComponent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasBatteryVoltage"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Store-01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CPUCooler-01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RAM-01"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CPU-01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PSU-01"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasBatteryCapacity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SalesPerson"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isInComputer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPersonalInformation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPesonnel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Keyboard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WirelessMouse"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasdGPU"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Manager-02"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HDD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HighEndTV"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasMotherboard"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Product"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ComputerStore"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCompatibleWith"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPanelRefreshRate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPanelMaxBrightness"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#dGPU-01"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasBatteryTechnology"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasRAM"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Manager-01"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#sells"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAddressCity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAge"/>
+        <DataProperty IRI="#hasPanelResolution"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSSD"/>
@@ -184,34 +37,58 @@
         <Class IRI="#Storage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ShoeStore"/>
+        <Class IRI="#Shirt"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Computer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPSU"/>
+        <Class IRI="#ShoeStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerPeripherals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPhone"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Battery"/>
+        <Class IRI="#MegaStore"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TVStore"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Mouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoldBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HDD-01"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasPanelSize"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Case"/>
+        <Class IRI="#GamingMonitor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Manager"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WiredMouse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Motherboard"/>
@@ -223,22 +100,43 @@
         <DataProperty IRI="#hasAddressStreetNumber"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#worksWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelTechnology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProductID"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Pants"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SSD-01"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCPUCooler"/>
+        <Class IRI="#ComputerComponent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isCaseOfComputer"/>
+        <NamedIndividual IRI="#Store-01"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotherboardOfComputer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#dGPU"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#RAM-01"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Clothes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CPU-01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
@@ -256,10 +154,34 @@
         <Class IRI="#GamingComputer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SalesPerson"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isInComputer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPesonnel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WirelessMouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasdGPU"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ClothesStore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manager-02"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isWorkingAtStore"/>
@@ -268,16 +190,19 @@
         <NamedIndividual IRI="#SalesPerson-01"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMonitor"/>
+        <Class IRI="#HDD"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isWireless"/>
+        <Class IRI="#HighEndTV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMotherboard"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Shoes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CPUCooler"/>
+        <DataProperty IRI="#isWireless"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Desktop"/>
@@ -289,25 +214,43 @@
         <Class IRI="#Store"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerStore"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OfficeMonitor"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasSurname"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCase"/>
+        <DataProperty IRI="#hasPanelMaxBrightness"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Motherboard-01"/>
+        <NamedIndividual IRI="#dGPU-01"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasHDD"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Motherboard-01"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRAM"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SSD"/>
@@ -316,7 +259,10 @@
         <DataProperty IRI="#hasAddressCountry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PSU"/>
+        <NamedIndividual IRI="#Manager-01"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sells"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasManager"/>
@@ -331,24 +277,34 @@
         <DataProperty IRI="#hasPrice"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasAddressCity"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isManager"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasClothesSize"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasStorage"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#ClothesStore"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#sells"/>
-            <Class IRI="#Clothes"/>
-        </ObjectAllValuesFrom>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Clothes"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ComputerStore"/>
         <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
             <ObjectComplementOf>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="#sells"/>
@@ -374,6 +330,7 @@
     <EquivalentClasses>
         <Class IRI="#ElectronicsStore"/>
         <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
             <ObjectUnionOf>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="#sells"/>
@@ -450,6 +407,7 @@
     <EquivalentClasses>
         <Class IRI="#MegaStore"/>
         <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#sells"/>
                 <Class IRI="#Clothes"/>
@@ -488,24 +446,33 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ShoeStore"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#sells"/>
-            <Class IRI="#Shoes"/>
-        </ObjectAllValuesFrom>
+        <ObjectIntersectionOf>
+            <Class IRI="#ClothesStore"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Shoes"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Staff"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#isWorkingAtStore"/>
-            <Class IRI="#Store"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#isWorkingAtStore"/>
+                <Class IRI="#Store"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#TVStore"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#sells"/>
-            <Class IRI="#TV"/>
-        </ObjectAllValuesFrom>
+        <ObjectIntersectionOf>
+            <Class IRI="#Store"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#TV"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#WiredMouse"/>
@@ -528,40 +495,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#Battery"/>
-        <Class IRI="#ComputerComponent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Battery"/>
-        <ObjectIntersectionOf>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasBatteryCapacity"/>
-                <Datatype abbreviatedIRI="xsd:integer"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasBatteryTechnology"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasBatteryVoltage"/>
-                <Datatype abbreviatedIRI="xsd:float"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasTitle"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CPU"/>
-        <Class IRI="#ComputerComponent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CPUCooler"/>
-        <Class IRI="#ComputerComponent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Case"/>
         <Class IRI="#ComputerComponent"/>
     </SubClassOf>
     <SubClassOf>
@@ -571,10 +505,6 @@
     <SubClassOf>
         <Class IRI="#ClothesStore"/>
         <Class IRI="#Store"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Coat"/>
-        <Class IRI="#Clothes"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Computer"/>
@@ -616,27 +546,6 @@
     <SubClassOf>
         <Class IRI="#Desktop"/>
         <Class IRI="#Computer"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Desktop"/>
-        <ObjectIntersectionOf>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="#hasCPUCooler"/>
-                <Class IRI="#CPUCooler"/>
-            </ObjectMinCardinality>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="#hasPSU"/>
-                <Class IRI="#PSU"/>
-            </ObjectMinCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasCase"/>
-                <Class IRI="#Case"/>
-            </ObjectExactCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasMotherboard"/>
-                <Class IRI="#Motherboard"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ElectronicsStore"/>
@@ -702,10 +611,6 @@
     <SubClassOf>
         <Class IRI="#OfficeMonitor"/>
         <Class IRI="#Monitor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PSU"/>
-        <Class IRI="#ComputerComponent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pants"/>
@@ -876,32 +781,11 @@
         <Class IRI="#ComputerComponent"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#CPU"/>
-        <Class IRI="#CPUCooler"/>
-        <Class IRI="#Case"/>
-        <Class IRI="#Motherboard"/>
-        <Class IRI="#PSU"/>
-        <Class IRI="#RAM"/>
-        <Class IRI="#Storage"/>
-        <Class IRI="#dGPU"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Clothes"/>
         <Class IRI="#Computer"/>
         <Class IRI="#ComputerComponent"/>
         <Class IRI="#ComputerPeripherals"/>
         <Class IRI="#TV"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Coat"/>
-        <Class IRI="#Pants"/>
-        <Class IRI="#Shirt"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Coat"/>
-        <Class IRI="#Pants"/>
-        <Class IRI="#Shirt"/>
-        <Class IRI="#Shoes"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Customer"/>
@@ -924,21 +808,22 @@
         <Class IRI="#Manager"/>
         <Class IRI="#SalesPerson"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Product"/>
+        <Class IRI="#Store"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#CPU"/>
         <NamedIndividual IRI="#CPU-01"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CPUCooler"/>
-        <NamedIndividual IRI="#CPUCooler-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Case"/>
-        <NamedIndividual IRI="#Case-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#HDD"/>
         <NamedIndividual IRI="#HDD-01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#Manager-01"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Staff"/>
@@ -947,10 +832,6 @@
     <ClassAssertion>
         <Class IRI="#Motherboard"/>
         <NamedIndividual IRI="#Motherboard-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#PSU"/>
-        <NamedIndividual IRI="#PSU-01"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#RAM"/>
@@ -996,26 +877,6 @@
         <DataProperty IRI="#hasTitle"/>
         <NamedIndividual IRI="#CPU-01"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ryzen 5 5600X</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#CPUCooler-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">59.99</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#CPUCooler-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Scythe Fuma 2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#Case-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">79.99</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#Case-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CoolerMaster NR200P</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAddressCity"/>
@@ -1097,14 +958,6 @@
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasCPUCooler"/>
-        <ObjectProperty IRI="#hasComponent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasCase"/>
-        <ObjectProperty IRI="#hasComponent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1117,15 +970,7 @@
         <ObjectProperty IRI="#hasPesonnel"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasMonitor"/>
-        <ObjectProperty IRI="#hasComponent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMotherboard"/>
-        <ObjectProperty IRI="#hasComponent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasPSU"/>
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1153,10 +998,6 @@
         <ObjectProperty IRI="#hasComponent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isCaseOfComputer"/>
-        <ObjectProperty IRI="#isInComputer"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isCompatibleWith"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1167,6 +1008,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isManager"/>
         <ObjectProperty IRI="#isWorkingAtStore"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMotherboardOfComputer"/>
+        <ObjectProperty IRI="#isInComputer"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isSoldBy"/>
@@ -1189,16 +1034,16 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasCase"/>
-        <ObjectProperty IRI="#isCaseOfComputer"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty IRI="#isInComputer"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasManager"/>
         <ObjectProperty IRI="#isManager"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <ObjectProperty IRI="#isMotherboardOfComputer"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1213,19 +1058,16 @@
         <ObjectProperty IRI="#sells"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasCase"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasManager"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasMotherboard"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#isCaseOfComputer"/>
+        <ObjectProperty IRI="#isManager"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#isManager"/>
+        <ObjectProperty IRI="#isMotherboardOfComputer"/>
     </InverseFunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#isCompatibleWith"/>
@@ -1247,8 +1089,8 @@
         <Class IRI="#Computer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasMonitor"/>
-        <Class IRI="#Laptop"/>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Store"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1287,14 +1129,6 @@
         <Class IRI="#CPU"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCPUCooler"/>
-        <Class IRI="#CPUCooler"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCase"/>
-        <Class IRI="#Case"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasComponent"/>
         <Class IRI="#ComputerComponent"/>
     </ObjectPropertyRange>
@@ -1303,16 +1137,12 @@
         <Class IRI="#HDD"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasMonitor"/>
-        <Class IRI="#Monitor"/>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Manager"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMotherboard"/>
         <Class IRI="#Motherboard"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPSU"/>
-        <Class IRI="#PSU"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPesonnel"/>
@@ -1389,22 +1219,6 @@
     <SubDataPropertyOf>
         <DataProperty IRI="#hasAge"/>
         <DataProperty IRI="#hasPersonalInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasBatteryCapacity"/>
-        <DataProperty IRI="#hasBatteryProperties"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasBatteryProperties"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasBatteryTechnology"/>
-        <DataProperty IRI="#hasBatteryProperties"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasBatteryVoltage"/>
-        <DataProperty IRI="#hasBatteryProperties"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasClothesSize"/>
@@ -1489,15 +1303,6 @@
         <DataProperty IRI="#hasAge"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#hasBatteryCapacity"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasBatteryTechnology"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasBatteryVoltage"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
         <DataProperty IRI="#hasClothesSize"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -1542,10 +1347,6 @@
             <Class IRI="#Person"/>
             <Class IRI="#Store"/>
         </ObjectUnionOf>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasBatteryProperties"/>
-        <Class IRI="#Battery"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasClothesSize"/>
