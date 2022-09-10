@@ -51,7 +51,6 @@ worksWith
 -2 transitive
 isSupervisorOf
 hasSupervisor
-(isCompatibleWith)
 
 -2 functional
 isManager

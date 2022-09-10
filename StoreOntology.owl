@@ -16,40 +16,31 @@
         <Class IRI="#CPU"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasPanelProperties"/>
+        <NamedIndividual IRI="#Jean_Shorts"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasPanelResolution"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSSD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ElectronicsStore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Storage"/>
+        <DataProperty IRI="#hasPanelProperties"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Shirt"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Computer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ShoeStore"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ComputerPeripherals"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="#hasPhone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MegaStore"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TVStore"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mouse"/>
@@ -61,28 +52,19 @@
         <ObjectProperty IRI="#isSoldBy"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAddress"/>
+        <NamedIndividual IRI="#Crucial_8GB_DDR4_2400MHz_SO-DIMM"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasPanelSize"/>
+        <DataProperty IRI="#hasAddress"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GamingMonitor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Manager"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#Surfer_T-Shirt"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WiredMouse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Motherboard"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCPU"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#worksWith"/>
@@ -94,10 +76,151 @@
         <DataProperty IRI="#hasProductID"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ComputerComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalesPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInComputer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPesonnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adidas_Ultra_Boost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WirelessMouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasdGPU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Razer_Deathadder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HDD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighEndTV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMotherboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerStore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Doe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WD_Blue_2TB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRAM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HP_84F7"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sells"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressCity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSSD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicsStore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Store_03"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShoeStore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TVStore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPanelSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motherboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GeForce_RTX_3050"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCPU"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Pants"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputerComponent"/>
+        <NamedIndividual IRI="#Logitech_G305_Lightspeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Store_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_S2421H"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isMotherboardOfComputer"/>
@@ -109,10 +232,13 @@
         <Class IRI="#Clothes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Person"/>
+        <Class IRI="#Staff"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Sharkoon_PureWriter_TKL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Smith"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSupervisor"/>
@@ -121,37 +247,16 @@
         <Class IRI="#RAM"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAddressStreetAndNumber"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isSupervisorOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GamingComputer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SalesPerson"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isInComputer"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPesonnel"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPersonalInformation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WirelessMouse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Keyboard"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasdGPU"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ClothesStore"/>
@@ -160,13 +265,7 @@
         <ObjectProperty IRI="#isWorkingAtStore"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HDD"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HighEndTV"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Shoes"/>
@@ -181,25 +280,16 @@
         <Class IRI="#Store"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Product"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Laptop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputerStore"/>
+        <NamedIndividual IRI="#Store_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jane_Doe"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OfficeMonitor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCompatibleWith"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPanelRefreshRate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasSurname"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasHDD"/>
@@ -208,7 +298,10 @@
         <Class IRI="#TV"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crucial_Ballistix_16GB_DDR4_3600MHZ"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SSD"/>
@@ -217,31 +310,31 @@
         <DataProperty IRI="#hasAddressCountry"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sells"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasManager"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OfficeComputer"/>
+        <NamedIndividual IRI="#Store_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AOC_G24U"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasEmail"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#OfficeComputer"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasPrice"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isManager"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasClothesSize"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAge"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasStorage"/>
@@ -263,23 +356,9 @@
             <ObjectComplementOf>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="#sells"/>
-                    <Class IRI="#Clothes"/>
-                </ObjectSomeValuesFrom>
-            </ObjectComplementOf>
-            <ObjectComplementOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#sells"/>
                     <Class IRI="#TV"/>
                 </ObjectSomeValuesFrom>
             </ObjectComplementOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#sells"/>
-                <Class IRI="#Computer"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#sells"/>
-                <Class IRI="#ComputerComponent"/>
-            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -301,10 +380,7 @@
                 </ObjectSomeValuesFrom>
             </ObjectUnionOf>
             <ObjectComplementOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#sells"/>
-                    <Class IRI="#Clothes"/>
-                </ObjectSomeValuesFrom>
+                <Class IRI="#ClothesStore"/>
             </ObjectComplementOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -564,45 +640,23 @@
         <Class IRI="#ComputerPeripherals"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isWireless"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficeComputer"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#OfficeMonitor"/>
         <Class IRI="#Monitor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pants"/>
         <Class IRI="#Clothes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Person"/>
-        <ObjectIntersectionOf>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressCity"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressCountry"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressStreetAndNumber"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAge"/>
-                <Datatype abbreviatedIRI="xsd:short"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasEmail"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasName"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasSurname"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Product"/>
@@ -652,6 +706,10 @@
     <SubClassOf>
         <Class IRI="#Store"/>
         <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasManager"/>
+                <Class IRI="#Manager"/>
+            </ObjectExactCardinality>
             <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressCity"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
@@ -719,6 +777,10 @@
         <Class IRI="#Laptop"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#GamingComputer"/>
+        <Class IRI="#OfficeComputer"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#HDD"/>
         <Class IRI="#SSD"/>
     </DisjointClasses>
@@ -736,6 +798,642 @@
         <Class IRI="#Product"/>
         <Class IRI="#Store"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shoes"/>
+        <NamedIndividual IRI="#Adidas_Ultra_Boost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAM"/>
+        <NamedIndividual IRI="#Crucial_8GB_DDR4_2400MHz_SO-DIMM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAM"/>
+        <NamedIndividual IRI="#Crucial_Ballistix_16GB_DDR4_3600MHZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monitor"/>
+        <NamedIndividual IRI="#Dell_S2421H"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desktop"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SalesPerson"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dGPU"/>
+        <NamedIndividual IRI="#GeForce_RTX_3050"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SalesPerson"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SalesPerson"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#HP_84F7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPU"/>
+        <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pants"/>
+        <NamedIndividual IRI="#Jean_Shorts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#John_Doe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SSD"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TV"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mouse"/>
+        <NamedIndividual IRI="#Logitech_G305_Lightspeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mouse"/>
+        <NamedIndividual IRI="#Razer_Deathadder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPU"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TV"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Keyboard"/>
+        <NamedIndividual IRI="#Sharkoon_PureWriter_TKL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Store"/>
+        <NamedIndividual IRI="#Store_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shirt"/>
+        <NamedIndividual IRI="#Surfer_T-Shirt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HDD"/>
+        <NamedIndividual IRI="#WD_Blue_2TB"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <NamedIndividual IRI="#WD_Blue_2TB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMotherboard"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <NamedIndividual IRI="#Crucial_Ballistix_16GB_DDR4_3600MHZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasdGPU"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <NamedIndividual IRI="#GeForce_RTX_3050"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#HP_84F7"/>
+        <NamedIndividual IRI="#Crucial_8GB_DDR4_2400MHz_SO-DIMM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#HP_84F7"/>
+        <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#HP_84F7"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMotherboardOfComputer"/>
+        <NamedIndividual IRI="#HP_84F7"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+        <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+        <NamedIndividual IRI="#Crucial_8GB_DDR4_2400MHz_SO-DIMM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
+        <NamedIndividual IRI="#Crucial_8GB_DDR4_2400MHz_SO-DIMM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManager"/>
+        <NamedIndividual IRI="#Jane_Doe"/>
+        <NamedIndividual IRI="#Store_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManager"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <NamedIndividual IRI="#Store_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+        <NamedIndividual IRI="#Crucial_Ballistix_16GB_DDR4_3600MHZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+        <NamedIndividual IRI="#GeForce_RTX_3050"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+        <NamedIndividual IRI="#WD_Blue_2TB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPesonnel"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_02"/>
+        <NamedIndividual IRI="#Adidas_Ultra_Boost"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_03"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_03"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <NamedIndividual IRI="#Surfer_T-Shirt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManager"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
+        <NamedIndividual IRI="#Store_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">144</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelResolution"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1920x1080</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelSize"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelTechnology"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">IPS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Adidas_Ultra_Boost"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">120.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Crucial_Ballistix_16GB_DDR4_3600MHZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">80.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+        <NamedIndividual IRI="#Dell_S2421H"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelResolution"/>
+        <NamedIndividual IRI="#Dell_S2421H"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1920x1080</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelSize"/>
+        <NamedIndividual IRI="#Dell_S2421H"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelTechnology"/>
+        <NamedIndividual IRI="#Dell_S2421H"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">IPS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Desktop_Computer_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dimitris_d@yahoo.gr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#Dimitris_Dimitriadis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6969594919</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#GeForce_RTX_3050"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">giannis_d@hotmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#Giannis_Dimitriadis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6979695949</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">giorgos_p@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#Giorgos_Papadopoulos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6989796959</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Jane_Doe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Jane_Doe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jane_d@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#Jane_Doe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6937271757</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasClothesSize"/>
+        <NamedIndividual IRI="#Jean_Shorts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Jean_Shorts"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#John_Doe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#John_Doe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">john_d@outlook.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#John_Doe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6912345678</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">69</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">john_s@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6948201837</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">90.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelResolution"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">3840x2160</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelSize"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">55.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelTechnology"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OLED</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Logitech_G305_Lightspeed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">35.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWireless"/>
+        <NamedIndividual IRI="#Logitech_G305_Lightspeed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#MSI_B550i_Gaming_Edge_WiFi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">125.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Razer_Deathadder"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWireless"/>
+        <NamedIndividual IRI="#Razer_Deathadder"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelRefreshRate"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelResolution"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">3840x2160</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelSize"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPanelTechnology"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">VA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Sharkoon_PureWriter_TKL"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Patra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Agiou Andreou 120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Store_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chania</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Store_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
+        <NamedIndividual IRI="#Store_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Skalidi 43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Store_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Patra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Store_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
+        <NamedIndividual IRI="#Store_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Agiou Andreou 53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#short">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">steliostylian@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPhone"/>
+        <NamedIndividual IRI="#Stylianos_Stylianakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">6988786858</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasClothesSize"/>
+        <NamedIndividual IRI="#Surfer_T-Shirt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Large</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Surfer_T-Shirt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#WD_Blue_2TB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCPU"/>
         <ObjectProperty IRI="#hasComponent"/>
@@ -860,9 +1558,6 @@
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#hasSupervisor"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#isCompatibleWith"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#isSupervisorOf"/>
@@ -1004,10 +1699,6 @@
         <DataProperty IRI="#hasPersonalInformation"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasName"/>
-        <DataProperty IRI="#hasPersonalInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#hasPanelProperties"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1032,16 +1723,16 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#hasPhone"/>
+        <DataProperty IRI="#hasPersonalInformation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#hasPrice"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasProductID"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasSurname"/>
-        <DataProperty IRI="#hasPersonalInformation"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#isWireless"/>
@@ -1063,9 +1754,6 @@
         <DataProperty IRI="#hasEmail"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#hasName"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
         <DataProperty IRI="#hasPanelRefreshRate"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -1082,9 +1770,6 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasProductID"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasSurname"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#hasAddress"/>
@@ -1116,6 +1801,10 @@
         <DataProperty IRI="#hasProductID"/>
         <Class IRI="#Product"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isWireless"/>
+        <Class IRI="#Mouse"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasAge"/>
         <Datatype abbreviatedIRI="xsd:short"/>
@@ -1126,7 +1815,19 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasPanelRefreshRate"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:short"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPanelResolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPanelSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPanelTechnology"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isWireless"/>
