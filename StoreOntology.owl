@@ -25,12 +25,6 @@
         <ObjectProperty IRI="#hasSSD"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasTitle"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAddressStreetName"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ElectronicsStore"/>
     </Declaration>
     <Declaration>
@@ -49,9 +43,6 @@
         <Class IRI="#ComputerPeripherals"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasPhone"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
@@ -68,9 +59,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isSoldBy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HDD-01"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAddress"/>
@@ -97,9 +85,6 @@
         <ObjectProperty IRI="#hasCPU"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAddressStreetNumber"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#worksWith"/>
     </Declaration>
     <Declaration>
@@ -112,13 +97,7 @@
         <Class IRI="#Pants"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SSD-01"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ComputerComponent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Store-01"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isMotherboardOfComputer"/>
@@ -127,13 +106,7 @@
         <Class IRI="#dGPU"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RAM-01"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Clothes"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CPU-01"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
@@ -146,6 +119,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#RAM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isSupervisorOf"/>
@@ -181,13 +157,7 @@
         <Class IRI="#ClothesStore"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Manager-02"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isWorkingAtStore"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SalesPerson-01"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HDD"/>
@@ -206,9 +176,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Desktop"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAddressZipCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Store"/>
@@ -235,16 +202,7 @@
         <DataProperty IRI="#hasSurname"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasPanelMaxBrightness"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#dGPU-01"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasHDD"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Motherboard-01"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TV"/>
@@ -259,19 +217,16 @@
         <DataProperty IRI="#hasAddressCountry"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Manager-01"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#sells"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasManager"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasEmail"/>
+        <Class IRI="#OfficeComputer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OfficeComputer"/>
+        <DataProperty IRI="#hasEmail"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasPrice"/>
@@ -304,7 +259,7 @@
     <EquivalentClasses>
         <Class IRI="#ComputerStore"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Store"/>
+            <Class IRI="#ElectronicsStore"/>
             <ObjectComplementOf>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="#sells"/>
@@ -467,7 +422,7 @@
     <EquivalentClasses>
         <Class IRI="#TVStore"/>
         <ObjectIntersectionOf>
-            <Class IRI="#Store"/>
+            <Class IRI="#ElectronicsStore"/>
             <ObjectAllValuesFrom>
                 <ObjectProperty IRI="#sells"/>
                 <Class IRI="#TV"/>
@@ -628,20 +583,12 @@
                 <Datatype abbreviatedIRI="xsd:string"/>
             </DataExactCardinality>
             <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressStreetName"/>
+                <DataProperty IRI="#hasAddressStreetAndNumber"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressStreetNumber"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressZipCode"/>
-                <Datatype abbreviatedIRI="xsd:integer"/>
             </DataExactCardinality>
             <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAge"/>
-                <Datatype abbreviatedIRI="xsd:integer"/>
+                <Datatype abbreviatedIRI="xsd:short"/>
             </DataExactCardinality>
             <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasEmail"/>
@@ -652,10 +599,6 @@
                 <Datatype abbreviatedIRI="xsd:string"/>
             </DataExactCardinality>
             <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasPhone"/>
-                <Datatype abbreviatedIRI="xsd:long"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasSurname"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
             </DataExactCardinality>
@@ -664,10 +607,6 @@
     <SubClassOf>
         <Class IRI="#Product"/>
         <ObjectIntersectionOf>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasTitle"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
             <DataMaxCardinality cardinality="1">
                 <DataProperty IRI="#hasPrice"/>
                 <Datatype abbreviatedIRI="xsd:float"/>
@@ -713,10 +652,6 @@
     <SubClassOf>
         <Class IRI="#Store"/>
         <ObjectIntersectionOf>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="#hasManager"/>
-                <Class IRI="#Manager"/>
-            </ObjectExactCardinality>
             <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasAddressCity"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
@@ -726,16 +661,8 @@
                 <Datatype abbreviatedIRI="xsd:string"/>
             </DataExactCardinality>
             <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressStreetName"/>
+                <DataProperty IRI="#hasAddressStreetAndNumber"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressStreetNumber"/>
-                <Datatype abbreviatedIRI="xsd:string"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasAddressZipCode"/>
-                <Datatype abbreviatedIRI="xsd:integer"/>
             </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -746,22 +673,22 @@
     <SubClassOf>
         <Class IRI="#TV"/>
         <ObjectIntersectionOf>
-            <DataAllValuesFrom>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasPanelRefreshRate"/>
                 <Datatype abbreviatedIRI="xsd:short"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasPanelResolution"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasPanelSize"/>
                 <Datatype abbreviatedIRI="xsd:float"/>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
                 <DataProperty IRI="#hasPanelTechnology"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
-            </DataAllValuesFrom>
+            </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -788,10 +715,6 @@
         <Class IRI="#TV"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Customer"/>
-        <Class IRI="#Staff"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Desktop"/>
         <Class IRI="#Laptop"/>
     </DisjointClasses>
@@ -813,146 +736,6 @@
         <Class IRI="#Product"/>
         <Class IRI="#Store"/>
     </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#CPU"/>
-        <NamedIndividual IRI="#CPU-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#HDD"/>
-        <NamedIndividual IRI="#HDD-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Manager"/>
-        <NamedIndividual IRI="#Manager-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Staff"/>
-        <NamedIndividual IRI="#Manager-02"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Motherboard"/>
-        <NamedIndividual IRI="#Motherboard-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#RAM"/>
-        <NamedIndividual IRI="#RAM-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SSD"/>
-        <NamedIndividual IRI="#SSD-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SalesPerson"/>
-        <NamedIndividual IRI="#SalesPerson-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Store"/>
-        <NamedIndividual IRI="#Store-01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#dGPU"/>
-        <NamedIndividual IRI="#dGPU-01"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isManager"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <NamedIndividual IRI="#Store-01"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isWorkingAtStore"/>
-        <NamedIndividual IRI="#SalesPerson-01"/>
-        <NamedIndividual IRI="#Store-01"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasManager"/>
-        <NamedIndividual IRI="#Store-01"/>
-        <NamedIndividual IRI="#Manager-01"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#CPU-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">289.99</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTitle"/>
-        <NamedIndividual IRI="#CPU-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ryzen 5 5600X</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressCity"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chania</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressCountry"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressStreetName"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Efedron Polemiston</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressStreetNumber"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">41A</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressZipCode"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">73135</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAge"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasEmail"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">steliostylian@gmail.com</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stylianos</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPhone"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6985850265</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSurname"/>
-        <NamedIndividual IRI="#Manager-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stylianakis</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressCity"/>
-        <NamedIndividual IRI="#Store-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chania</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressCountry"/>
-        <NamedIndividual IRI="#Store-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressStreetName"/>
-        <NamedIndividual IRI="#Store-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Efedron Polemiston</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressStreetNumber"/>
-        <NamedIndividual IRI="#Store-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">45</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasAddressZipCode"/>
-        <NamedIndividual IRI="#Store-01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">73135</Literal>
-    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCPU"/>
         <ObjectProperty IRI="#hasComponent"/>
@@ -1205,15 +988,7 @@
         <DataProperty IRI="#hasAddress"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasAddressStreetName"/>
-        <DataProperty IRI="#hasAddress"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasAddressStreetNumber"/>
-        <DataProperty IRI="#hasAddress"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasAddressZipCode"/>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
         <DataProperty IRI="#hasAddress"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1231,10 +1006,6 @@
     <SubDataPropertyOf>
         <DataProperty IRI="#hasName"/>
         <DataProperty IRI="#hasPersonalInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasPanelMaxBrightness"/>
-        <DataProperty IRI="#hasPanelProperties"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasPanelProperties"/>
@@ -1261,10 +1032,6 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasPhone"/>
-        <DataProperty IRI="#hasPersonalInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#hasPrice"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1275,10 +1042,6 @@
     <SubDataPropertyOf>
         <DataProperty IRI="#hasSurname"/>
         <DataProperty IRI="#hasPersonalInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasTitle"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#isWireless"/>
@@ -1291,15 +1054,6 @@
         <DataProperty IRI="#hasAddressCountry"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#hasAddressStreetName"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasAddressStreetNumber"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasAddressZipCode"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
         <DataProperty IRI="#hasAge"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -1310,9 +1064,6 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasName"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasPanelMaxBrightness"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasPanelRefreshRate"/>
@@ -1327,9 +1078,6 @@
         <DataProperty IRI="#hasPanelTechnology"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#hasPhone"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
         <DataProperty IRI="#hasPrice"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -1337,9 +1085,6 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasSurname"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#hasTitle"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#hasAddress"/>
@@ -1382,10 +1127,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasPanelRefreshRate"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasTitle"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isWireless"/>
