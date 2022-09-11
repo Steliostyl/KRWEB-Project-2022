@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology">
     <Prefix name="" IRI="http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology"/>
+    <Prefix name="os" IRI="http://www.semanticweb.org/steli/ontologies/2022/0/store-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -172,6 +173,9 @@
         <DataProperty IRI="#hasAge"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasSSD"/>
     </Declaration>
     <Declaration>
@@ -223,10 +227,13 @@
         <NamedIndividual IRI="#Dell_S2421H"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#dGPU"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isMotherboardOfComputer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#dGPU"/>
+        <NamedIndividual IRI="#Intel_Core_i7_12700k"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Clothes"/>
@@ -812,6 +819,10 @@
         <NamedIndividual IRI="#Adidas_Ultra_Boost"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Motherboard"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#RAM"/>
         <NamedIndividual IRI="#Crucial_8GB_DDR4_2400MHz_SO-DIMM"/>
     </ClassAssertion>
@@ -850,6 +861,10 @@
     <ClassAssertion>
         <Class IRI="#Laptop"/>
         <NamedIndividual IRI="#HP_Pavilion_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPU"/>
+        <NamedIndividual IRI="#Intel_Core_i7_12700k"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CPU"/>
@@ -919,6 +934,31 @@
         <Class IRI="#HDD"/>
         <NamedIndividual IRI="#WD_Blue_2TB"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+        <NamedIndividual IRI="#Crucial_Ballistix_16GB_DDR4_3600MHZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+        <NamedIndividual IRI="#GeForce_RTX_3050"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+        <NamedIndividual IRI="#Intel_Core_i7_12700k"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+        <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCompatibleWith"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+        <NamedIndividual IRI="#WD_Blue_2TB"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasCPU"/>
         <NamedIndividual IRI="#Desktop_Computer_1"/>
@@ -1008,6 +1048,11 @@
         <ObjectProperty IRI="#isCompatibleWith"/>
         <NamedIndividual IRI="#Intel_Core_i7_8550u"/>
         <NamedIndividual IRI="#Kingston_NV1_1TB_NVMe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManager"/>
+        <NamedIndividual IRI="#John_Doe"/>
+        <NamedIndividual IRI="#Store_04"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isManager"/>
@@ -1166,8 +1211,18 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#Adidas_Ultra_Boost"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">120.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Asus_ROG_Strix_B660-A_Gaming_D4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">210.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
@@ -1253,6 +1308,11 @@
         <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#HP_Pavilion_15"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Intel_Core_i7_12700k"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">350.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAge"/>
@@ -1433,6 +1493,36 @@
         <DataProperty IRI="#hasAddressStreetAndNumber"/>
         <NamedIndividual IRI="#Store_03"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Agiou Andreou 53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Patra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Greece</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
+        <NamedIndividual IRI="#Store_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Kostantinoupoleos 28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCity"/>
+        <NamedIndividual IRI="#Store_05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Eidhoven</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressCountry"/>
+        <NamedIndividual IRI="#Store_05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Netherlands</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAddressStreetAndNumber"/>
+        <NamedIndividual IRI="#Store_05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Den Dolech 2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAge"/>
