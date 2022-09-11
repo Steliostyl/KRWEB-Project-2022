@@ -121,6 +121,9 @@
         <NamedIndividual IRI="#Razer_Deathadder"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Store_05"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HDD"/>
     </Declaration>
     <Declaration>
@@ -182,9 +185,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Store_03"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ShoeStore"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Computer"/>
@@ -359,6 +359,18 @@
                     <Class IRI="#TV"/>
                 </ObjectSomeValuesFrom>
             </ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#Computer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#ComputerComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#sells"/>
+                <Class IRI="#ComputerPeripherals"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -462,7 +474,10 @@
         <ObjectIntersectionOf>
             <Class IRI="#Computer"/>
             <ObjectComplementOf>
-                <Class IRI="#GamingComputer"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasdGPU"/>
+                    <Class IRI="#dGPU"/>
+                </ObjectSomeValuesFrom>
             </ObjectComplementOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -473,16 +488,6 @@
             <ObjectComplementOf>
                 <Class IRI="#GamingMonitor"/>
             </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ShoeStore"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#ClothesStore"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#sells"/>
-                <Class IRI="#Shoes"/>
-            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -688,10 +693,6 @@
         <Class IRI="#Clothes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ShoeStore"/>
-        <Class IRI="#ClothesStore"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Shoes"/>
         <Class IRI="#Clothes"/>
     </SubClassOf>
@@ -771,6 +772,10 @@
         <Class IRI="#ComputerComponent"/>
         <Class IRI="#ComputerPeripherals"/>
         <Class IRI="#TV"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClothesStore"/>
+        <Class IRI="#ElectronicsStore"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Desktop"/>
@@ -1006,11 +1011,6 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isManager"/>
-        <NamedIndividual IRI="#Jane_Doe"/>
-        <NamedIndividual IRI="#Store_02"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isManager"/>
         <NamedIndividual IRI="#John_Smith"/>
         <NamedIndividual IRI="#Store_03"/>
     </ObjectPropertyAssertion>
@@ -1062,7 +1062,22 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#sells"/>
         <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#LG_OLED55C2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_01"/>
         <NamedIndividual IRI="#Ryzen_5_5600X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_01"/>
+        <NamedIndividual IRI="#Samsung_UE50RU7000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#Store_02"/>
+        <NamedIndividual IRI="#Jane_Doe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#sells"/>
@@ -1103,6 +1118,21 @@
         <ObjectProperty IRI="#sells"/>
         <NamedIndividual IRI="#Store_04"/>
         <NamedIndividual IRI="#Surfer_T-Shirt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_05"/>
+        <NamedIndividual IRI="#AOC_G24U"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_05"/>
+        <NamedIndividual IRI="#HP_Pavilion_15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sells"/>
+        <NamedIndividual IRI="#Store_05"/>
+        <NamedIndividual IRI="#Ryzen_5_5600X"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isManager"/>
@@ -1588,7 +1618,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isManager"/>
-        <Class IRI="#Staff"/>
+        <Class IRI="#Manager"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isSoldBy"/>
@@ -1599,8 +1629,16 @@
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#sells"/>
-        <Class IRI="#Store"/>
+        <ObjectUnionOf>
+            <Class IRI="#ClothesStore"/>
+            <Class IRI="#ElectronicsStore"/>
+            <Class IRI="#MegaStore"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCPU"/>
@@ -1660,11 +1698,19 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSoldBy"/>
-        <Class IRI="#Store"/>
+        <ObjectUnionOf>
+            <Class IRI="#ClothesStore"/>
+            <Class IRI="#ElectronicsStore"/>
+            <Class IRI="#MegaStore"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSupervisorOf"/>
         <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWorkingAtStore"/>
+        <Class IRI="#Store"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#sells"/>
